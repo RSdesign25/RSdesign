@@ -14,7 +14,7 @@
         <h3 class="headLine">{{ item.head }}</h3>
       </el-carousel-item>
     </el-carousel>
-    <el-collapse v-model="activeNames" @change="handleChange" accordion>
+    <el-collapse v-model="activeNames" @change="handleChange">
       <el-collapse-item title="CODING" name="1">
         <div>
           Nuxt.js/Vue.js/JavaScript/HTML/CSS
