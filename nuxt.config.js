@@ -9,7 +9,7 @@ export default {
             { hid: 'description', name: 'description', content: 'フロントエンジニア櫻井のポートフォリオです' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: '/RSdesign/favicon.ico' }
         ],
     },
 
@@ -43,5 +43,9 @@ export default {
     // Build Configuration (https://go.nuxtjs.dev/config-build)
     build: {
         transpile: [/^element-ui/],
+    },
+
+    router: {
+        base: '/RSdesign/'
     },
 }
