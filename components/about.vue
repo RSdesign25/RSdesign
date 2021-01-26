@@ -46,7 +46,7 @@ export default {
           head: "CODING",
           id: 1,
           styleObject: {
-            backgroundImage: 'url("/coding.jpg")',
+            backgroundImage: 'url("/still/coding.jpg")',
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           },
@@ -55,7 +55,7 @@ export default {
           head: "TOURING",
           id: 2,
           styleObject: {
-            backgroundImage: 'url("/bike.jpg")',
+            backgroundImage: 'url("/still/bike.jpg")',
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           },
@@ -64,7 +64,7 @@ export default {
           head: "SWIMMING",
           id: 3,
           styleObject: {
-            backgroundImage: 'url("/swim.jpg")',
+            backgroundImage: 'url("/still/swim.jpg")',
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           },
