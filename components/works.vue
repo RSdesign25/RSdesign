@@ -25,25 +25,26 @@ export default {
     return {
       dialogVisible: false,
       itemVisible: {
-        id: null,
         title: null,
         sitePic: null,
         siteLink: null,
       },
       items: [
         {
-          id: 1,
-          title: "税制改正 2021年度",
+          // title: "税制改正 2021年度",
+          title: null,
           pic: "/RSdesign/still/og_image-1.jpg",
           sitePic: "/RSdesign/still/zeisei2021.jpg",
-          siteLink: "https://www3.nhk.or.jp/news/special/zeisei2021/",
+          // siteLink: "https://www3.nhk.or.jp/news/special/zeisei2021/",
+          siteLink: null,
         },
         {
-          id: 2,
-          title: "2021年度予算案",
+          // title: "2021年度予算案",
+          title: null,
           pic: "/RSdesign/still/og_image.jpg",
           sitePic: "/RSdesign/still/yosan2021.jpg",
-          siteLink: "https://www3.nhk.or.jp/news/special/yosan2021/",
+          // siteLink: "https://www3.nhk.or.jp/news/special/yosan2021/",
+          siteLink: null,
         },
       ],
     };
@@ -52,7 +53,6 @@ export default {
     contentVisible(item) {
       this.itemVisible.title = item.title;
       this.itemVisible.sitePic = item.sitePic;
-      this.itemVisible.client = item.client;
       this.itemVisible.siteLink = item.siteLink;
     },
     reScroll() {
@@ -60,6 +60,26 @@ export default {
         this.$refs.imageBox.scrollTop = 0;
       }
     }
+  },
+  computed:{
+    works(){
+      return this.$store.state.works.works
+    }
+  },
+  created(){
+    this.$store.dispatch('works/init')
+  },
+  mounted(){
+    // for(let i=0;i<this.items.length;i++){
+    //   console.log(this.works)
+    //   this.items[i].title = this.works[i].title;
+    //   this.items[i].siteLink = this.works[i].siteLink;
+    // }
+    // this.items.forEach( (value,index) => {
+    //   console.log(value)
+    //   value.title = this.works[index].title;
+    //   value.siteLink = this.works[index].siteLink;
+    // });
   },
   updated() {
     this.reScroll();
